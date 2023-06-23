@@ -31,5 +31,5 @@ void main(){
         printf("\nWrong choice");
         break;
     }
-    
+    //assignment 2 done
 }
