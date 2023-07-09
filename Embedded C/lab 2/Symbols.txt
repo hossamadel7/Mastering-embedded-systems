@@ -1,0 +1,44 @@
+$ arm-none-eabi-nm.exe main.o
+00000000 T main
+00000000 D R_ODR
+
+
+
+
+$ arm-none-eabi-nm.exe startup.o
+         U _E_bss
+         U _E_DATA
+         U _E_Text
+         U _S_bss
+         U _S_DATA
+         U _stack_top
+00000000 W Bus_Fault
+00000000 T Default_Handler
+00000000 W H_fault_Handler
+         U main
+00000000 W MM_Fault_Handler
+00000000 W NMI_Handler
+0000000c T Rest_Handler
+00000000 W Usage_Fault_Handler
+00000000 D vectors
+
+
+
+
+$ arm-none-eabi-nm.exe learn-in-depth-cortex-m3.elf
+02000004 B _E_bss
+02000004 D _E_DATA
+08000124 T _E_Text
+02000004 B _S_bss
+02000000 D _S_DATA
+02001004 B _stack_top
+08000094 W Bus_Fault
+08000094 T Default_Handler
+08000094 W H_fault_Handler
+0800001c T main
+08000094 W MM_Fault_Handler
+08000094 W NMI_Handler
+02000000 D R_ODR
+080000a0 T Rest_Handler
+08000094 W Usage_Fault_Handler
+08000000 T vectors
